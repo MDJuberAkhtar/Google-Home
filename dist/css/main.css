@@ -1,0 +1,241 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex-container a {
+  margin: 0 20px 0 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.flex-container .sign-in {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #4683ea;
+  height: 30px;
+  width: 65px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #4285f4;
+}
+
+a, p {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #000;
+}
+
+.main {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.main .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+  height: 35px;
+  width: 40%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  border-radius: 30px;
+}
+
+.main .search:focus {
+  outline: none;
+  -webkit-box-shadow: 1px 1px 5px #808080;
+          box-shadow: 1px 1px 5px #808080;
+  background-image: none;
+  padding-left: 25px;
+}
+
+.main .search:hover {
+  -webkit-box-shadow: 1px 1px 5px #808080;
+          box-shadow: 1px 1px 5px #808080;
+}
+
+.main .flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .flexbox .google-search-btn, .main .flexbox .random-search-btn {
+  border: none;
+  margin-top: 25px;
+  font-size: 15px;
+  color: #5F6368;
+  margin-right: 25px;
+  padding: 7px 15px 7px 15px;
+  border-radius: 3px;
+}
+
+.main .flexbox .google-search-btn:hover, .main .flexbox .random-search-btn:hover {
+  border: 1px solid rgba(0, 0, 0, 0.226);
+}
+
+.main .google-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .google-text .english {
+  color: #0000ff;
+}
+
+input[type='text'] {
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: 40px 40px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 26px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer .india {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+}
+
+footer hr {
+  color: #a9a9a9;
+  width: 99%;
+  left: 0%;
+  height: 2px;
+}
+
+footer .footers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footers .left, footer .footers .right {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 5px;
+}
+
+.ads, .bus, .about, .pri, .term, .sets {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 786px) {
+  #content-dekstop {
+    display: none;
+  }
+  .india {
+    text-align: center;
+  }
+  #logo-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    width: 60%;
+  }
+  #mobile-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 25px;
+    height: 35px;
+    width: 80%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+  }
+  #mobile-search:focus {
+    outline: none;
+    -webkit-box-shadow: 1px 1px 5px #808080;
+            box-shadow: 1px 1px 5px #808080;
+  }
+  #mobile-search:hover {
+    -webkit-box-shadow: 1px 1px 5px #808080;
+            box-shadow: 1px 1px 5px #808080;
+  }
+}
+/*# sourceMappingURL=main.css.map */
